@@ -1,0 +1,342 @@
+.c-flights_ticket {
+    display: block;
+    width: 100%
+}
+.c-flights_ticket+.c-flights_ticket {
+    margin-top: 8px
+}
+.c-flights_ticket-container {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.c-flights_ticket.has-header .c-flights_ticket-container {
+    background-color: #239dd5
+}
+.c-flights_ticket-header {
+    font-weight: 700;
+    padding: 8px 16px
+}
+.c-flights_ticket-content {
+    color: rgba(0, 0, 0, .87);
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden
+}
+.c-flights_ticket.has-header .c-flights_ticket-content {
+    margin-bottom: 4px
+}
+.c-flights_ticket-summary {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2)
+}
+.c-flights_ticket-summary-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: calc(100% - 200px)
+}
+.c-flights_ticket-summary-header {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 12px 16px 0
+}
+.c-flights_ticket-summary-segment {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #f2f2f2
+}
+.c-flights_ticket-summary-segment-carriers {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 48px;
+    padding-right: 8px;
+    box-sizing: content-box
+}
+.c-flights_ticket-summary-segment-location {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    width: calc(50% - 130px);
+    overflow: hidden
+}
+.c-flights_ticket-summary-segment-location--origin {
+    text-align: right;
+    padding-right: 12px
+}
+.c-flights_ticket-summary-segment-location--destination {
+    padding-left: 12px
+}
+.c-flights_ticket-summary-segment-iata_time {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+.c-flights_ticket-summary-segment-location--origin .c-flights_ticket-summary-segment-iata_time {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+.c-flights_ticket-summary-segment-location--origin .c-flights_ticket-summary-segment-iata {
+    margin-right: 8px
+}
+.c-flights_ticket-summary-segment-location--destination .c-flights_ticket-summary-segment-iata {
+    margin-left: 8px
+}
+.c-flights_ticket-summary-segment-time {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700
+}
+.c-flights_ticket-summary-segment-location--destination .c-flights_ticket-summary-segment-time {
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1
+}
+.c-flights_ticket-summary-segment-time-offset {
+    font-size: .625rem;
+    line-height: .875rem;
+    letter-spacing: .01875rem;
+    margin-left: 4px
+}
+.c-flights_ticket-summary-segment-place {
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .01875rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+.c-flights_ticket-summary-segment-route {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    width: 130px;
+    padding-right: 12px;
+    padding-left: 12px
+}
+.c-flights_ticket-summary-segment-route:after, .c-flights_ticket-summary-segment-route:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-image: linear-gradient(180deg, #000 2px, transparent 0, transparent);
+    background-position: 50%;
+    background-size: 2px 4px;
+    background-repeat: repeat-y;
+    opacity: .2
+}
+.c-flights_ticket-summary-segment-route:before {
+    left: -1px
+}
+.c-flights_ticket-summary-segment-route:after {
+    right: -1px
+}
+.c-flights_ticket-summary-footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 8px 12px
+}
+.c-flights_ticket-summary-footer-offers, .c-flights_ticket-summary-offers {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+.c-flights_ticket-summary-offers {
+    margin-left: 12px
+}
+.c-flights_ticket-summary-offer {
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .01875rem
+}
+.c-flights_ticket-summary-offer+.c-flights_ticket-summary-offer {
+    margin-left: 16px
+}
+.c-flights_ticket-summary-offer-link {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    color: inherit
+}
+.c-flights_ticket-summary-offer-supplier {
+    color: #2ca179
+}
+.c-flights_ticket-summary-offer-price {
+    color: rgba(0, 0, 0, .59);
+    font-weight: 700;
+    white-space: nowrap
+}
+.c-flights_ticket-summary-offer--deal .c-flights_ticket-summary-offer-price {
+    color: #2ca179
+}
+.c-flights_ticket-summary-deal {
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: 200px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #f2f2f2
+}
+.c-flights_ticket-summary-deal, .c-flights_ticket-summary-deal-header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative
+}
+.c-flights_ticket-summary-deal-header {
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 8px
+}
+.c-flights_ticket-summary-deal-rating {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+.c-flights_ticket-summary-deal-favorite, .c-flights_ticket-summary-deal-rating {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+.c-flights_ticket-summary-deal-main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 12px;
+    padding-left: 12px
+}
+.c-flights_ticket-summary-deal-class {
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .01875rem;
+    color: rgba(0, 0, 0, .59);
+    margin-bottom: 4px
+}
+.c-flights_ticket-summary-deal-prices {
+    text-align: right
+}
+.c-flights_ticket-summary-deal-price {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-weight: 700;
+    width: 100%
+}
+.c-flights_ticket-summary-deal-price--single {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .03125rem
+}
+.c-flights_ticket-summary-deal-price--total {
+    color: rgba(0, 0, 0, .59)
+}
+.c-flights_ticket-summary-deal-footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 12px;
+    padding-top: 8px
+}

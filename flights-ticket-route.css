@@ -1,0 +1,71 @@
+.c-flights_ticket_route {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center
+}
+.c-flights_ticket_route-container {
+    position: relative
+}
+.c-flights_ticket_route-duration {
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .01875rem;
+    font-weight: 700;
+    margin-bottom: 4px
+}
+.c-flights_ticket_route-stops {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.c-flights_ticket_route-stops-svg {
+    display: block;
+    overflow: visible !important
+}
+.c-flights_ticket_route-stops-svg-line {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    opacity: .2;
+    vector-effect: non-scaling-stroke
+}
+[theme=secondary] .c-flights_ticket_route .c-flights_ticket_route-stops-svg-line {
+    stroke: #000
+}
+[theme=primary] .c-flights_ticket_route .c-flights_ticket_route-stops-svg-line {
+    stroke: #fff
+}
+.c-flights_ticket_route-stops-svg-dot {
+    fill: #fff
+}
+[theme=secondary] .c-flights_ticket_route .c-flights_ticket_route-stops-svg-dot {
+    fill: #494949
+}
+[theme=primary] .c-flights_ticket_route .c-flights_ticket_route-stops-svg-dot {
+    fill: #fff
+}
+.c-flights_ticket_route-stops-label {
+    font-size: .5rem;
+    line-height: .75rem;
+    letter-spacing: .01875rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    fill: #fff;
+    text-anchor: middle
+}
+[theme=secondary] .c-flights_ticket_route .c-flights_ticket_route-stops-label {
+    color: rgba(0, 0, 0, .87);
+    fill: rgba(0, 0, 0, .87)
+}
+[theme=primary] .c-flights_ticket_route .c-flights_ticket_route-stops-label {
+    color: #fff;
+    fill: #fff
+}

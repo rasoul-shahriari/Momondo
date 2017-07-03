@@ -1,0 +1,256 @@
+/**
+ * Type: primary
+ * Weight: regular
+ */
+@font-face {
+    src:
+        local('☺'),
+        url('./lato-regular.woff2') format('woff2'),
+        url('./lato-regular.woff') format('woff');
+    font-family: ffprimary;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/**
+ * Type: primary
+ * Weight: bold
+ */
+@font-face {
+    src:
+        local('☺'),
+        url('./lato-bold.woff2') format('woff2'),
+        url('./lato-bold.woff') format('woff');
+    font-family: ffprimary;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/**
+ * Set all elements to 'border-box'.
+ */
+* {
+    box-sizing: border-box;
+}
+
+/**
+ * Override default browser text selection styling
+ */
+::selection {
+    color: white;
+    background-color: #239dd5;
+}
+
+/**
+ * `html` & `body` elements
+ */
+html,
+body {
+    min-height: 100%;
+}
+
+/**
+ * `html` element
+ * - Set default 'font-size'.
+ * - Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom.
+ */
+html {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.0125rem;
+    text-size-adjust: 100%;
+}
+
+/**
+ * `body` element
+ * - Set body styles.
+ * - Set font-family in framework (_b-typography.pcss), unless we need to use typography while the site is loading.
+ */
+body {
+    color: white;
+    margin: 0;
+    background-color: #1e063c;
+    font-family: ffprimary, 'Hiragino Sans GB', '冬青黑体简体中文', 'STXihei', '华文细黑', 'Microsoft YaHei', '微软雅黑', '文泉驿微米黑', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Link overrides
+ */
+a {
+    color: #239dd5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #30ceff;
+}
+
+a:active {
+    color: #1975b6;
+}
+
+/**
+ * App
+ */
+.c-app {
+    /* Placeholder */
+}
+
+/**
+ * Layout
+ */
+.c-app_developertest-layout {
+    max-width: 1280px; /* calc(1184px + 48 * 2); */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+@media (min-width: 1100px) {
+    .c-app_developertest-layout {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+}
+
+/**
+ * Header
+ */
+.c-app_developertest-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 66px;
+    background-color: #140028;
+}
+
+.c-app_developertest-header-content {
+    width: 100%;
+}
+
+@media (min-width: 560px) {
+    .c-app_developertest-header-content {
+        height: 66px;
+    }
+}
+
+.c-app_developertest-header-logo {
+        height: 26px;
+        margin-top: 20px;
+}
+
+
+/**
+ * Body
+ */
+.c-app_developertest-body {
+    width: 100%;
+    margin-top: 66px;
+    text-align: center;
+}
+
+@media (min-width: 560px) {
+    .c-app_developertest-body {
+        padding-top: 0;
+        background-position: 45vw -20vw;
+        background-size: 80vw;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-app_developertest-body {
+        /* Placeholder */
+    }
+}
+
+@media (min-width: 1100px) {
+    .c-app_developertest-body {
+        /* Placeholder */
+    }
+}
+
+/* Prevent background image from growing too big */
+@media (min-width: 1300px) {
+    .c-app_developertest-body {
+        background-position: 45vw -259px;
+        background-size: 1039px;
+    }
+}
+
+
+
+/**
+ * Content
+ */
+.c-app_developertest-body-content {
+    overflow: auto; /* Prevents collapsing margins */
+}
+
+@media (min-width: 560px) {
+    .c-app_developertest-body-content {
+/*        width: 55%;*/
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-app_developertest-body-content {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .c-app_developertest-body-content {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c-app_developertest-body-content-headline {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.03125rem;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 560px) {
+    .c-app_developertest-body-content-headline {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.03125rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .c-app_developertest-body-content-headline {
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.03125rem;
+    }
+}
+
+.c-app_developertest-body-content-byline {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 560px) {
+    .c-app_developertest-body-content-byline {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        letter-spacing: .01875rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .c-app_developertest-body-content-byline {
+        /* Placeholder */
+    }
+}
